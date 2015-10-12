@@ -1,0 +1,16 @@
+/* Portrait */
+@media only screen and (orientation: portrait) {
+	.fullpage{
+
+		//height: 50vh;
+		//width: 100vw;
+
+		a.statement{
+			//height: 50vh;
+			
+			p{
+				bottom: 40vh;
+			}
+		}
+	}
+}
