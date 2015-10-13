@@ -8,12 +8,25 @@
 
 //@import "bootstrap/_bootstrap.scss";
 
+*{
+	box-sizing: border-box;
+}
+
+html,
+body{
+	height: 100%; //Fill viewport height
+}
+
 body { 
 	background: black;
 }
 
 p{
 	margin-bottom: 10px;
+}
+img {
+	max-width: 100%;
+	height: auto;
 }
 
 div.statement{

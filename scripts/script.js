@@ -1,13 +1,12 @@
 $(document).ready(function () {
   //initialize swiper when document ready  
   var swiperH = new Swiper ('.swiper-container-h', {
-    	// Optional parameters
     direction: 'horizontal',
     loop: true,
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
     keyboardControl: true,
-
+    //Possible to link to an image
     hashnav: true,
     //autoplay: 2500,
     autoplayDisableOnInteraction: true
@@ -23,8 +22,7 @@ $(document).ready(function () {
   		
   	},
     onSlideChangeEnd: function(i){
-      if(i.isBeginning == false){
-        
+      if(i.isBeginning == false){       
         swiperH.lockSwipes();
       }else{
         swiperH.unlockSwipes();
