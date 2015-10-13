@@ -17,9 +17,10 @@ $(document).ready(function () {
   	// Optional parameters
   	direction: 'vertical',
   	loop: false,
+    mousewheelControl: true,
+    mousewheelReleaseOnEdges: true,
   	onClick: function(i,e){
-  		//i.slideNext();
-  		
+  		//i.slideNext();		
   	},
     onSlideChangeEnd: function(i){
       if(i.isBeginning == false){       
