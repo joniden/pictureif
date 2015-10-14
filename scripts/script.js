@@ -17,11 +17,9 @@ $(document).ready(function () {
   	// Optional parameters
   	direction: 'vertical',
   	loop: false,
+    nextButton: '.swiper-button-down',
     mousewheelControl: true,
     mousewheelReleaseOnEdges: true,
-  	onClick: function(i,e){
-  		//i.slideNext();		
-  	},
     onSlideChangeEnd: function(i){
       if(i.isBeginning == false){       
         swiperH.lockSwipes();
@@ -31,4 +29,29 @@ $(document).ready(function () {
       
     }
   })
+
+  /**
+   * Pulldown
+   * @param  {[type]} ){ var id [description]
+   * @return {[type]}     [description]
+   */
+  $('.open-pulldown').click(function(){
+    var id = $(this).attr('href');
+    $(id).toggleClass('pulldown');
+  });
+
+  var navbar = $('#navbar-collapse');
+  var wrapper = $('.content-wrap');
+
+  navbar.on('show.bs.collapse', function () {
+    wrapper.addClass('show-menu');
+  }).on('hide.bs.collapse', function () {
+    wrapper.removeClass('show-menu');
+  });
+
+  $('.dropdown-menu a').click(function(){
+    navbar.collapse('hide');
+    wrapper.removeClass('show-menu');
+  });
+
 });

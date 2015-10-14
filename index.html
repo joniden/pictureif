@@ -1,48 +1,68 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Helpers</title>
 		<link rel="stylesheet" type="text/css" href="stylesheets/swiper.min.css">
-		<link rel="stylesheet" type="text/css" href="stylesheets/menu_topexpand.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
 
 		<script type="text/javascript" src="scripts/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="scripts/swiper.jquery.min.js?1"></script>
 		<script type="text/javascript" src="scripts/script.js"></script>
 		
+		
 	</head>
 	<body>
-		<div class="menu-wrap">
-			<nav class="menu">
-				<div class="icon-list">
-					<a href="#">
-						
-						<span>About</span>
-					</a>
-					<a href="#">					
-						<span>Children</span>
-					</a>
-					<a href="#">
-						<span>Refugee camps</span>
-					</a>
+		<nav class="navbar navbar-default navbar-fixed-top">
+		  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+	    	</div>
 
-				</div>
-			</nav>
-		</div><!-- end menu wrapper -->
-		<button border="0" class="menu-button" id="open-button">
-		</button>
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="navbar-collapse">
+		 
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a class="open-pulldown" href="#about">About</a></li>
+		        <li><a class="open-pulldown" href="#contact">Contact</a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Content <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#child">Child</a></li>
+		            <li><a href="#village">Village</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		<div id="about">
+
+		</div>
+		<div id="contact">
+
+		</div>
+
 		<div class="swiper-container content-wrap swiper-container-h">
 	  		<div class="swiper-wrapper">
-				<div class="swiper-slide" data-hash="slide1">
+				<div class="swiper-slide" data-hash="child">
 					<div class="swiper-container swiper-container-v">
 			  			<div class="swiper-wrapper">
-							<div class="fullpage swiper-slide" id="page1">
+							<div class="fullpage swiper-slide" id="child">
 								<div class="statement">
 							
 									<p>Johan, 7 years old first day of school</p>
 								</div>
 								<div class="swiper-button-next swiper-button"></div>
         						<div class="swiper-button-prev swiper-button"></div>
+        						<div class="swiper-button-down"></div>
 							</div>
 							
 							<div class="fullpage swiper-slide">
@@ -76,11 +96,174 @@
 					
 				</div><!-- end swipe -->
 
-				<div class="swiper-slide" data-hash="slide2">
+				<div class="swiper-slide" data-hash="village">
 					<div class="swiper-container swiper-container-v">
 			  			<div class="swiper-wrapper">
 
-							<div class="fullpage swiper-slide" id="page3">
+							<div class="fullpage swiper-slide" id="village">
+								<div class="statement">
+									<p>Gullmarstorp, Sweden</p>
+								</div>
+								<div class="swiper-button-next swiper-button"></div>
+        						<div class="swiper-button-prev swiper-button"></div>
+							</div>
+
+							<div class="fullpage swiper-slide">
+	
+								<div class="info">
+									<p class="intro">This is actually Za'atari refugee camp in Jordan, current population 79 000+</p>
+
+									<p>They are in desperate need of water and food. Help them here</p>
+
+									<ul>
+										<li>Organisation 3</li>
+										<li>Organisation 4</li>
+									</ul>
+								</div>
+							</div>
+							<div class="fullpage swiper-slide">
+	
+								<div class="info">
+									<p class="intro">It's just another refugee page, nothing to see! keep swiping!</p>
+
+									<p>They love candy and coke!</p>
+
+									<ul>
+										<li>sagolandet</li>
+										<li>verkligheten</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!--item -->
+				<div class="swiper-slide" data-hash="">
+					<div class="swiper-container swiper-container-v">
+			  			<div class="swiper-wrapper">
+
+							<div class="fullpage swiper-slide" id="">
+								<div class="statement">
+									<p>Gullmarstorp, Sweden</p>
+								</div>
+								<div class="swiper-button-next swiper-button"></div>
+        						<div class="swiper-button-prev swiper-button"></div>
+							</div>
+
+							<div class="fullpage swiper-slide">
+	
+								<div class="info">
+									<p class="intro">This is actually Za'atari refugee camp in Jordan, current population 79 000+</p>
+
+									<p>They are in desperate need of water and food. Help them here</p>
+
+									<ul>
+										<li>Organisation 3</li>
+										<li>Organisation 4</li>
+									</ul>
+								</div>
+							</div>
+							<div class="fullpage swiper-slide">
+	
+								<div class="info">
+									<p class="intro">It's just another refugee page, nothing to see! keep swiping!</p>
+
+									<p>They love candy and coke!</p>
+
+									<ul>
+										<li>sagolandet</li>
+										<li>verkligheten</li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div><!--item --><div class="swiper-slide" data-hash="">
+					<div class="swiper-container swiper-container-v">
+			  			<div class="swiper-wrapper">
+
+							<div class="fullpage swiper-slide" id="">
+								<div class="statement">
+									<p>Gullmarstorp, Sweden</p>
+								</div>
+								<div class="swiper-button-next swiper-button"></div>
+        						<div class="swiper-button-prev swiper-button"></div>
+							</div>
+
+							<div class="fullpage swiper-slide">
+	
+								<div class="info">
+									<p class="intro">This is actually Za'atari refugee camp in Jordan, current population 79 000+</p>
+
+									<p>They are in desperate need of water and food. Help them here</p>
+
+									<ul>
+										<li>Organisation 3</li>
+										<li>Organisation 4</li>
+									</ul>
+								</div>
+							</div>
+							<div class="fullpage swiper-slide">
+	
+								<div class="info">
+									<p class="intro">It's just another refugee page, nothing to see! keep swiping!</p>
+
+									<p>They love candy and coke!</p>
+
+									<ul>
+										<li>sagolandet</li>
+										<li>verkligheten</li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div><!--item --><div class="swiper-slide" data-hash="">
+					<div class="swiper-container swiper-container-v">
+			  			<div class="swiper-wrapper">
+
+							<div class="fullpage swiper-slide" id="">
+								<div class="statement">
+									<p>Gullmarstorp, Sweden</p>
+								</div>
+								<div class="swiper-button-next swiper-button"></div>
+        						<div class="swiper-button-prev swiper-button"></div>
+							</div>
+							<div class="fullpage swiper-slide">
+	
+								<div class="info">
+									<p class="intro">This is actually Za'atari refugee camp in Jordan, current population 79 000+</p>
+
+									<p>They are in desperate need of water and food. Help them here</p>
+
+									<ul>
+										<li>Organisation 3</li>
+										<li>Organisation 4</li>
+									</ul>
+								</div>
+							</div>
+							<div class="fullpage swiper-slide">
+	
+								<div class="info">
+									<p class="intro">It's just another refugee page, nothing to see! keep swiping!</p>
+
+									<p>They love candy and coke!</p>
+
+									<ul>
+										<li>sagolandet</li>
+										<li>verkligheten</li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div><!--item --><div class="swiper-slide" data-hash="">
+					<div class="swiper-container swiper-container-v">
+			  			<div class="swiper-wrapper">
+
+							<div class="fullpage swiper-slide" id="">
 								<div class="statement">
 									<p>Gullmarstorp, Sweden</p>
 								</div>
@@ -118,11 +301,11 @@
 						</div>
 					</div>
 				</div><!--item -->
-				<div class="swiper-slide" data-hash="slide2">
+				<div class="swiper-slide" data-hash="">
 					<div class="swiper-container swiper-container-v">
 			  			<div class="swiper-wrapper">
 
-							<div class="fullpage swiper-slide" id="page3">
+							<div class="fullpage swiper-slide" id="">
 								<div class="statement">
 									<p>Gullmarstorp, Sweden</p>
 								</div>
@@ -156,178 +339,11 @@
 									</ul>
 								</div>
 							</div>
-
-						</div>
-					</div>
-				</div><!--item --><div class="swiper-slide" data-hash="slide2">
-					<div class="swiper-container swiper-container-v">
-			  			<div class="swiper-wrapper">
-
-							<div class="fullpage swiper-slide" id="page3">
-								<div class="statement">
-									<p>Gullmarstorp, Sweden</p>
-								</div>
-								<div class="swiper-button-next swiper-button"></div>
-        						<div class="swiper-button-prev swiper-button"></div>
-							</div>
-
-							<div class="fullpage swiper-slide">
-	
-								<div class="info">
-									<p class="intro">This is actually Za'atari refugee camp in Jordan, current population 79 000+</p>
-
-									<p>They are in desperate need of water and food. Help them here</p>
-
-									<ul>
-										<li>Organisation 3</li>
-										<li>Organisation 4</li>
-									</ul>
-								</div>
-							</div>
-							<div class="fullpage swiper-slide">
-	
-								<div class="info">
-									<p class="intro">It's just another refugee page, nothing to see! keep swiping!</p>
-
-									<p>They love candy and coke!</p>
-
-									<ul>
-										<li>sagolandet</li>
-										<li>verkligheten</li>
-									</ul>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div><!--item --><div class="swiper-slide" data-hash="slide2">
-					<div class="swiper-container swiper-container-v">
-			  			<div class="swiper-wrapper">
-
-							<div class="fullpage swiper-slide" id="page3">
-								<div class="statement">
-									<p>Gullmarstorp, Sweden</p>
-								</div>
-								<div class="swiper-button-next swiper-button"></div>
-        						<div class="swiper-button-prev swiper-button"></div>
-							</div>
-							<div class="fullpage swiper-slide">
-	
-								<div class="info">
-									<p class="intro">This is actually Za'atari refugee camp in Jordan, current population 79 000+</p>
-
-									<p>They are in desperate need of water and food. Help them here</p>
-
-									<ul>
-										<li>Organisation 3</li>
-										<li>Organisation 4</li>
-									</ul>
-								</div>
-							</div>
-							<div class="fullpage swiper-slide">
-	
-								<div class="info">
-									<p class="intro">It's just another refugee page, nothing to see! keep swiping!</p>
-
-									<p>They love candy and coke!</p>
-
-									<ul>
-										<li>sagolandet</li>
-										<li>verkligheten</li>
-									</ul>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div><!--item --><div class="swiper-slide" data-hash="slide2">
-					<div class="swiper-container swiper-container-v">
-			  			<div class="swiper-wrapper">
-
-							<div class="fullpage swiper-slide" id="page3">
-								<div class="statement">
-									<p>Gullmarstorp, Sweden</p>
-								</div>
-								<div class="swiper-button-next swiper-button"></div>
-        						<div class="swiper-button-prev swiper-button"></div>
-							</div>
-
-							<div class="fullpage swiper-slide">
-	
-								<div class="info">
-									<p class="intro">This is actually Za'atari refugee camp in Jordan, current population 79 000+</p>
-
-									<p>They are in desperate need of water and food. Help them here</p>
-
-									<ul>
-										<li>Organisation 3</li>
-										<li>Organisation 4</li>
-									</ul>
-								</div>
-							</div>
-							<div class="fullpage swiper-slide">
-	
-								<div class="info">
-									<p class="intro">It's just another refugee page, nothing to see! keep swiping!</p>
-
-									<p>They love candy and coke!</p>
-
-									<ul>
-										<li>sagolandet</li>
-										<li>verkligheten</li>
-									</ul>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div><!--item --><div class="swiper-slide" data-hash="slide2">
-					<div class="swiper-container swiper-container-v">
-			  			<div class="swiper-wrapper">
-
-							<div class="fullpage swiper-slide" id="page3">
-								<div class="statement">
-									<p>Gullmarstorp, Sweden</p>
-								</div>
-								<div class="swiper-button-next swiper-button"></div>
-        						<div class="swiper-button-prev swiper-button"></div>
-							</div>
-
-							<div class="fullpage swiper-slide">
-	
-								<div class="info">
-									<p class="intro">This is actually Za'atari refugee camp in Jordan, current population 79 000+</p>
-
-									<p>They are in desperate need of water and food. Help them here</p>
-
-									<ul>
-										<li>Organisation 3</li>
-										<li>Organisation 4</li>
-									</ul>
-								</div>
-							</div>
-							<div class="fullpage swiper-slide">
-	
-								<div class="info">
-									<p class="intro">It's just another refugee page, nothing to see! keep swiping!</p>
-
-									<p>They love candy and coke!</p>
-
-									<ul>
-										<li>sagolandet</li>
-										<li>verkligheten</li>
-									</ul>
-								</div>
-							</div>
-
 						</div>
 					</div>
 				</div><!--item -->
-			</div><!-- wrapper horizontal -->
-			
+			</div><!-- wrapper horizontal -->	
 		</div><!-- swiper horizontal container -->
-
-		<script src="scripts/classie.js"></script>
-		<script src="scripts/main.js"></script>
+		<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
 	</body>
 </html>
