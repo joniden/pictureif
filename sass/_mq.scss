@@ -16,34 +16,45 @@
 }
 
 @media (max-width: 767px){
-	.navbar-default .navbar-nav{ 
-		li{
-			display: inline-block;
+	.navbar-default{
 
-			a{
-				padding: 5px 10px;
+		.navbar-collapse{
+			float: left;
+		}
+
+		.navbar-nav{ 
+			margin-top: 13px;
+
+			li{
+				display: inline-block;
+				float: left;
+
+				a{
+					padding: 5px 7px;
+				}
 			}
-		}
 
-		.dropdown{
-			position: static;
-		}
+			.dropdown{
+				position: static;
+			}
 
-		.open{
+			.open{
 
-			 .dropdown-menu{
-				position: absolute;
-				width: 100%;
-				margin-top: -20px;
+				 .dropdown-menu{
+					position: absolute;
+					width: 100%;
+					margin-top: -20px;
+					top: 80%;
 
-				> li{
-					display: block;
-					float: left;
-					 > a {
-					    color: white;
-					    padding-left: 20px;
-					    padding-top: 10px;
-					    padding-right: 10px;
+					> li{
+						display: block;
+						float: left;
+						 > a {
+						    color: white;
+						    padding-left: 20px;
+						    padding-top: 10px;
+						    padding-right: 10px;
+						}
 					}
 				}
 			}
@@ -54,8 +65,28 @@
 @media (max-width: 700px){
 	.info {
 		padding: 10px;
-		p.intro{
-			font-size: 24px;
+		p{
+			padding: 0 30px;
+			&.intro{
+				font-size: 24px;
+				margin-top: 60px;
+			}
+		}
+	}
+
+	.icons {
+		position: absolute;
+		bottom: 15px;
+
+		.engage, .donate{
+			width: 70px;
+			height: 60px;
+			text-align: center;
+
+			div{
+				height: 44px;
+				width: 44px;
+			}
 		}
 	}
 }

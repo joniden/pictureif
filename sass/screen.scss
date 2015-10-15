@@ -36,7 +36,7 @@ div.statement{
 	color: white;
 	text-align: center;
 	position: relative;
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 	//margin-top: 45vh;
 	
@@ -45,6 +45,7 @@ div.statement{
 		z-index: 10;
 		bottom: 10vh;
 		line-height: 1;
+		font-weight: bold;
 	}
 }
 
@@ -58,7 +59,7 @@ div.statement{
 
 /** Swiper **/
 .swiper-container {
-	height: 100vh;
+	height: 100%;
 	width: 100vw;
 }
 
@@ -109,7 +110,6 @@ div.statement{
 	position: relative;
 	height: 100%;
 	width: 100%;
-	overflow: hidden;
 	background-size: cover;
 	background-position: center;
 	float: left;
@@ -172,16 +172,21 @@ div.statement{
     border: 0px;
     text-align: center;
     min-width: 0px;
+    height: auto;
 
-     > li > a{
-     	color: white;
-     	padding: 10px;
-     	&:focus,&:hover{
-			color: #f1f1f1;
-			background: none;
-		}
+ 	> li{
+ 		display: block;
 
-     }
+      	> a{
+	     	color: white;
+	     	padding: 7px;
+	     	&:focus,&:hover{
+				color: #f1f1f1;
+				background: none;
+			}
+
+	     }
+	 }
 }
 
 #child{
@@ -220,16 +225,24 @@ div.statement{
 	color: white;
 	padding: 60px;
 	font-family: "Helvetica",Arial,sans-serif;
-	font-weight: 200;
+	text-align: center;
+	width: 100%;
 
 	p{
 		font-size: 20px;
+		text-align: left;
+		max-width: 700px;
+		margin: auto;
+		margin-bottom: 60px;
+		line-height: 1.5;
 
 		&.intro{
 			font-size: 50px;
-			margin: 50px 0;
+			padding: 0 20px;
 			text-align: center;
-			font-weight: 200;
+			font-weight: 600;
+			width: 100%;	
+			line-height: 1;
 		}
 	}
 
@@ -240,6 +253,44 @@ div.statement{
 			margin-bottom: 10px;
 		}
 	}
+}
+
+.icons{
+
+	text-align: center;
+	width: 100%;
+
+
+	.engage div{
+		background-image: url('../img/fight_engage.svg');
+	}
+
+	.donate div{ 
+		background-image: url('../img/donate_money.svg');
+	}
+
+	.engage, .donate{
+		display: inline-block;
+		width: 100px;
+		height: 120px;
+		margin: 0 20px;
+		color: white;
+		text-decoration: none;
+
+		div{
+			width: 100%;
+			height: 80%;
+			display: inline-block;
+			background-size: 100%;
+			background-repeat: no-repeat;
+			
+			background-color: white;
+			border-radius: 50%;
+
+		}
+	}
+
+	
 }
 
 @import "_mq.scss";

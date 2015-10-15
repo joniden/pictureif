@@ -30,6 +30,10 @@ $(document).ready(function () {
     }
   })
 
+  //Fix for menu
+  $('.fullpage,.swiper-container').height(window.innerHeight);
+
+
   /**
    * Pulldown
    * @param  {[type]} ){ var id [description]
@@ -53,5 +57,7 @@ $(document).ready(function () {
     navbar.collapse('hide');
     wrapper.removeClass('show-menu');
   });
+
+
 
 });

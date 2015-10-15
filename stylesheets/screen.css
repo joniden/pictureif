@@ -102,7 +102,7 @@ div.statement {
   color: white;
   text-align: center;
   position: relative;
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 /* line 43, ../sass/screen.scss */
@@ -111,56 +111,57 @@ div.statement p {
   z-index: 10;
   bottom: 10vh;
   line-height: 1;
+  font-weight: bold;
 }
 
-/* line 51, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 .content-wrap {
   transition: all 0.2s ease-in;
 }
-/* line 54, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 .content-wrap.show-menu {
   margin-top: 100px;
 }
 
 /** Swiper **/
-/* line 60, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 .swiper-container {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
 }
 
-/* line 67, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 .swiper-container-v .swiper-slide {
   position: relative;
   z-index: 5;
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 .swiper-button {
   height: 100%;
   top: 0px;
   background-color: transparent;
 }
-/* line 78, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .swiper-button:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* line 83, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 .swiper-button-next {
   right: 0px;
   padding: 10px;
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23202020'%2F%3E%3C%2Fsvg%3E");
 }
 
-/* line 89, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 .swiper-button-prev {
   left: 0px;
   padding: 10px;
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23202020'%2F%3E%3C%2Fsvg%3E");
 }
 
-/* line 95, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 .swiper-button-down {
   position: absolute;
   bottom: 0px;
@@ -172,12 +173,11 @@ div.statement p {
 }
 
 /** End swiper **/
-/* line 107, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 .fullpage {
   position: relative;
   height: 100%;
   width: 100%;
-  overflow: hidden;
   background-size: cover;
   background-position: center;
   float: left;
@@ -237,33 +237,38 @@ div.statement p {
   border: 0px;
   text-align: center;
   min-width: 0px;
+  height: auto;
 }
-/* line 176, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
+.dropdown-menu > li {
+  display: block;
+}
+/* line 180, ../sass/screen.scss */
 .dropdown-menu > li > a {
   color: white;
-  padding: 10px;
+  padding: 7px;
 }
-/* line 179, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
   color: #f1f1f1;
   background: none;
 }
 
-/* line 187, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 #child {
   background-image: url("../img/Ahmed-Aleppo-Web.jpg");
 }
 
-/* line 192, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 #village {
   background-image: url("../img/Gullmarstorp-Web.jpg");
 }
-/* line 195, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 #village p {
   bottom: 20vh;
 }
 
-/* line 200, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 #about, #contact {
   position: fixed;
   top: 0px;
@@ -274,37 +279,78 @@ div.statement p {
   background: black;
   z-index: 11;
 }
-/* line 210, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 #about.pulldown, #contact.pulldown {
   height: 100%;
   opacity: 0.7;
 }
 
-/* line 219, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 .info {
   color: white;
   padding: 60px;
   font-family: "Helvetica",Arial,sans-serif;
-  font-weight: 200;
+  text-align: center;
+  width: 100%;
 }
-/* line 225, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 .info p {
   font-size: 20px;
+  text-align: left;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 60px;
+  line-height: 1.5;
 }
-/* line 228, ../sass/screen.scss */
+/* line 239, ../sass/screen.scss */
 .info p.intro {
   font-size: 50px;
-  margin: 50px 0;
+  padding: 0 20px;
   text-align: center;
-  font-weight: 200;
+  font-weight: 600;
+  width: 100%;
+  line-height: 1;
 }
-/* line 236, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
 .info ul {
   font-size: 20px;
 }
-/* line 239, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 .info ul li {
   margin-bottom: 10px;
+}
+
+/* line 258, ../sass/screen.scss */
+.icons {
+  text-align: center;
+  width: 100%;
+}
+/* line 264, ../sass/screen.scss */
+.icons .engage div {
+  background-image: url("../img/fight_engage.svg");
+}
+/* line 268, ../sass/screen.scss */
+.icons .donate div {
+  background-image: url("../img/donate_money.svg");
+}
+/* line 272, ../sass/screen.scss */
+.icons .engage, .icons .donate {
+  display: inline-block;
+  width: 100px;
+  height: 120px;
+  margin: 0 20px;
+  color: white;
+  text-decoration: none;
+}
+/* line 280, ../sass/screen.scss */
+.icons .engage div, .icons .donate div {
+  width: 100%;
+  height: 80%;
+  display: inline-block;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: white;
+  border-radius: 50%;
 }
 
 /* Portrait */
@@ -315,30 +361,40 @@ div.statement p {
   }
 }
 @media (max-width: 767px) {
-  /* line 20, ../sass/_mq.scss */
-  .navbar-default .navbar-nav li {
-    display: inline-block;
+  /* line 21, ../sass/_mq.scss */
+  .navbar-default .navbar-collapse {
+    float: left;
   }
-  /* line 23, ../sass/_mq.scss */
-  .navbar-default .navbar-nav li a {
-    padding: 5px 10px;
+  /* line 25, ../sass/_mq.scss */
+  .navbar-default .navbar-nav {
+    margin-top: 13px;
   }
   /* line 28, ../sass/_mq.scss */
+  .navbar-default .navbar-nav li {
+    display: inline-block;
+    float: left;
+  }
+  /* line 32, ../sass/_mq.scss */
+  .navbar-default .navbar-nav li a {
+    padding: 5px 7px;
+  }
+  /* line 37, ../sass/_mq.scss */
   .navbar-default .navbar-nav .dropdown {
     position: static;
   }
-  /* line 34, ../sass/_mq.scss */
+  /* line 43, ../sass/_mq.scss */
   .navbar-default .navbar-nav .open .dropdown-menu {
     position: absolute;
     width: 100%;
     margin-top: -20px;
+    top: 80%;
   }
-  /* line 39, ../sass/_mq.scss */
+  /* line 49, ../sass/_mq.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li {
     display: block;
     float: left;
   }
-  /* line 42, ../sass/_mq.scss */
+  /* line 52, ../sass/_mq.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: white;
     padding-left: 20px;
@@ -347,12 +403,34 @@ div.statement p {
   }
 }
 @media (max-width: 700px) {
-  /* line 55, ../sass/_mq.scss */
+  /* line 66, ../sass/_mq.scss */
   .info {
     padding: 10px;
   }
-  /* line 57, ../sass/_mq.scss */
+  /* line 68, ../sass/_mq.scss */
+  .info p {
+    padding: 0 30px;
+  }
+  /* line 70, ../sass/_mq.scss */
   .info p.intro {
     font-size: 24px;
+    margin-top: 60px;
+  }
+
+  /* line 77, ../sass/_mq.scss */
+  .icons {
+    position: absolute;
+    bottom: 15px;
+  }
+  /* line 81, ../sass/_mq.scss */
+  .icons .engage, .icons .donate {
+    width: 70px;
+    height: 60px;
+    text-align: center;
+  }
+  /* line 86, ../sass/_mq.scss */
+  .icons .engage div, .icons .donate div {
+    height: 44px;
+    width: 44px;
   }
 }
