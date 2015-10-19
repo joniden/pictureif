@@ -5,7 +5,7 @@ $(document).ready(function () {
     loop: true,
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
-    keyboardControl: true,
+    //keyboardControl: true,
     //Possible to link to an image
     hashnav: true,
     //autoplay: 2500,
@@ -19,9 +19,11 @@ $(document).ready(function () {
     scrollbar: '.swiper-scrollbar',
   	loop: false,
     nextButton: '.swiper-button-down',
+    prevButton: '.swiper-button-up',
+    //hashnav: true,
     mousewheelControl: true,
-    mousewheelReleaseOnEdges: true,
     onSlideChangeEnd: function(i){
+
       if(i.isBeginning == false){       
         swiperH.lockSwipes();
       }else{
@@ -41,8 +43,17 @@ $(document).ready(function () {
    * @return {[type]}     [description]
    */
   $('.open-pulldown').click(function(){
+
     var id = $(this).attr('href');
-    $(id).toggleClass('pulldown');
+    if($(id).hasClass('pulldown')){
+      console.log('test');
+      $(id).removeClass('pulldown');
+    }else{
+      $('#about,#contact').removeClass('pulldown');
+      $(id).addClass('pulldown');
+    }
+
+    
   });
 
   var navbar = $('#navbar-collapse');

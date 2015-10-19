@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -37,8 +38,12 @@
 		        <li class="dropdown">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Campaigns <span class="caret"></span></a>
 		          <ul class="dropdown-menu">
-		            <li><a href="#child">Child</a></li>
-		            <li><a href="#village">Village</a></li>
+		            <li><a href="#soldier">Child soldiers</a></li>
+		            <li><a href="#agnes">Refugee camps</a></li>
+		            <li><a href="#johanna">Education</a></li>
+		            <li><a href="#festival">Food</a></li>
+		            <li><a href="#sunny">Boats</a></li>
+		            <li><a href="#teddy">Integration</a></li>
 		          </ul>
 		        </li>
 		      </ul>
@@ -46,18 +51,68 @@
 		  </div><!-- /.container-fluid -->
 		</nav>
 		<div id="about">
+			<h2>About us</h2>
+			<p>In the current climate of the Syrian refugee crisis - there is a vast amount of supporters wanting to contribute but not knowing where to start. This has lead to a lot people failing to join in the battle. </p>
 
+			<p>We aim to reach out to Scandinavians in the hope of spreading awareness and spark engagement by facilitating information regarding the refugee crisis and linking organizations, advocating different areas where support is needed. In a few steps we provide options on how you as an individual may contribute or take action by directing you to organizations you wish to support. </p>
+
+			<p>This is a <b>Hyper Island</b> student project</p>
 		</div>
 		<div id="contact">
+
+			<h2>Contact</h2>
+
+			<p>Joacim Niden<br />
+			<a href="mailto:joacim.niden@hyperisland.se">joacim.niden@hyperisland.se</a></p>
+
+			<p>Emil Forsmarker<br />
+			<a href="mailto:emil.forsmarker@hyperisland.se">emil.forsmarker@hyperisland.se</a></p>
+
+			<p>Elika Elmi<br />
+			<a href="mailto:elika.elmi@hyperisland.se">elika.elmi@hyperisland.se</a></p>
+
+			<p>Wesley Pires<br />
+			<a href="mailto:wesley.pires@hyperisland.se">wesley.pires@hyperisland.se</a></p>
+
+			<p>Edvin Kempe<br />
+			<a href="mailto:edvin.kempe@hyperisland.se">edvin.kempe@hyperisland.se</a></p>
 
 		</div>
 
 		<div class="swiper-container content-wrap swiper-container-h">
 	  		<div class="swiper-wrapper">
-				<div class="swiper-slide" data-hash="child">
+	  			<div class="swiper-slide" data-hash="gullmarstorp" id="gullmarstorp">
 					<div class="swiper-container swiper-container-v">
 			  			<div class="swiper-wrapper">
-							<div class="fullpage swiper-slide" id="child">
+
+							<div class="fullpage swiper-slide gullmarstorp">
+								<div class="statement">
+									<p>Gullmarstorp, Sweden</p>
+								</div>
+								<div class="swiper-button-next swiper-button"></div>
+        						<div class="swiper-button-prev swiper-button"></div>
+        						<div class="swiper-button-down"></div>
+							</div>
+
+							<div class="fullpage swiper-slide" style="padding-top: 10%;">
+								<div class="swiper-button-up"></div>
+	
+								<div class="info">
+									<p class="intro" >This is actually Za'atari refugee camp in Jordan, current population 79 000+</p>
+
+									<p style="text-align: center;">It's one of the largest refugee camps in the world and is severely under pressure due to the civil war in Syria and Iraq.</p>
+
+									<a target="_blank" href="http://data.unhcr.org/syrianrefugees/settlement.php?id=176&region=77&country=107">Read more about the Za'atari camp here</a>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div><!--item -->
+				<div class="swiper-slide" data-hash="soldier" id="soldier">
+					<div class="swiper-container swiper-container-v">
+			  			<div class="swiper-wrapper">
+							<div class="fullpage swiper-slide soldier">
 								<div class="statement">
 							
 									<p>Johan, 7 years old first day of school</p>
@@ -68,17 +123,21 @@
 							</div>
 							
 							<div class="fullpage swiper-slide">
+								<div class="swiper-button-up"></div>
 
 								<div class="info">
-									<p class="intro">Millions of children are fleeing from war and needs a safe place, far away from war.</p>
+									<p class="intro">Around 200 child soldiers have been confirmed killed in action by rights groups over the past four years. </p>
 
-									<p>We have chosen 2 current organisations that helps unaccompanied refugee children here in Sweden.</p>
+									<p>Although this figure represents about 2 percent of all casualties among Syrian children since 2011, the real number is likely far higher. We have chosen 2 current organisations that helps unaccompanied refugee children here in Sweden.</p>
 
 
 									<div class="icons">
 
-										<a target="_blank" class="engage" href="http://www.zamarit.se/"><div></div>Engage</a>
-										<a target="_blank" href="http://www.raddningsmissionen.se/nyheter/ensamkommande-flyktingbarn" class="donate"><div></div>Donate</a>
+										<a target="_blank" class="engage" href="http://www.zamarit.se/"><div></div>Engage
+										<span class="caption">Zamarit</span>
+										</a>
+										<a target="_blank" href="http://www.raddningsmissionen.se/nyheter/ensamkommande-flyktingbarn" class="donate"><div></div>Donate
+										<span class="caption">Räddningskomissionen</span></a>
 									</div>
 
 								</div>
@@ -89,47 +148,198 @@
 					
 				</div><!-- end swipe -->
 
-				<div class="swiper-slide" data-hash="village">
+				<div class="swiper-slide" id="erik" data-hash="erik">
 					<div class="swiper-container swiper-container-v">
 			  			<div class="swiper-wrapper">
 
-							<div class="fullpage swiper-slide" id="village">
+							<div class="fullpage swiper-slide erik">
 								<div class="statement">
-									<p>Gullmarstorp, Sweden</p>
+									<p>Erik 4, is visiting Västgöta Älvsbad together with his family. </p>
 								</div>
 								<div class="swiper-button-next swiper-button"></div>
         						<div class="swiper-button-prev swiper-button"></div>
+        						<div class="swiper-button-down"></div>
 							</div>
 
 							<div class="fullpage swiper-slide">
-	
+								<div class="swiper-button-up"></div>
 								<div class="info">
-									<p class="intro">This is actually Za'atari refugee camp in Jordan, current population 79 000+</p>
+									<p class="intro">This is not Västgöta Älvsbad. This is a Syrian boy in front of his family's tent at the Zaatari refugee camp in the Jordan. </p>
+									<p>They are in great need of water and food and many organisations are there to aid.
+									Help them here!</p>
 
-									<p>They are in desperate need of water and food. Help them here</p>
+									<div class="icons">
 
-									<ul>
-										<li>Organisation 3</li>
-										<li>Organisation 4</li>
-									</ul>
+										<a target="_blank" class="engage" href=" https://www.onlinevolunteering.org/en/vol/index.html "><div></div>Engage
+										<span class="caption">Online Volunteering</span>
+										</a>
+										<a target="_blank" href="http://www.raddningsmissionen.se/nyheter/ensamkommande-flyktingbarn" class="donate"><div></div>Donate
+										<span class="caption">Räddningskomissionen</span>
+										</a>
+									</div>
 								</div>
 							</div>
-							<div class="fullpage swiper-slide">
-	
-								<div class="info">
-									<p class="intro">It's just another refugee page, nothing to see! keep swiping!</p>
 
-									<p>They love candy and coke!</p>
-
-									<ul>
-										<li>sagolandet</li>
-										<li>verkligheten</li>
-									</ul>
-								</div>
-							</div>
+							
 						</div>
 					</div>
 				</div><!--item -->
+				<div class="swiper-slide" id="johanna" data-hash="johanna">
+					<div class="swiper-container swiper-container-v">
+			  			<div class="swiper-wrapper">
+
+							<div class="fullpage swiper-slide johanna">
+								<div class="statement">
+									<p>Johanna 5, enjoys drawing and writing.</p>
+								</div>
+								<div class="swiper-button-next swiper-button"></div>
+        						<div class="swiper-button-prev swiper-button"></div>
+        						<div class="swiper-button-down"></div>
+							</div>
+
+							<div class="fullpage swiper-slide">
+								<div class="swiper-button-up"></div>
+								
+								<div class="info">
+									<p class="intro">This is Shahd, 5, walking in a field near the Fayda camp in Syria. </p><p style="margin-bottom: 30px;">She and her mother fled Homs, Syria, when she was only a year old. The only world she has experienced is war. She needs education.</p>
+
+									<p>There are some 2.6 million Syrian children are still out of school, and waiting for someone to step forward and help them back into school.</p>
+
+									<div class="icons">
+
+										<a target="_blank" class="engage" href="https://start.varldensbarn.se/frivilliganmalan/"><div></div>Engage
+											<span class="caption">Världens barn</span>
+										</a>
+										<a target="_blank" href="https://start.varldensbarn.se/ge-en-gava/ 
+										" class="donate"><div></div>Donate<span class="caption">Världens barn</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							
+							
+						</div>
+					</div>
+				</div><!--item -->
+					<div class="swiper-slide" id="festival" data-hash="festival">
+					<div class="swiper-container swiper-container-v">
+			  			<div class="swiper-wrapper">
+
+							<div class="fullpage swiper-slide festival">
+								<div class="statement">
+									<p>Way Out East, 2014</p>
+								</div>
+								<div class="swiper-button-next swiper-button"></div>
+        						<div class="swiper-button-prev swiper-button"></div>
+        						<div class="swiper-button-down"></div>
+							</div>
+
+							<div class="fullpage swiper-slide">
+								<div class="swiper-button-up"></div>
+								<div class="info">
+									<p class="intro" style="max-width: 720px;">This is not way out east, this is refugees in desperate need of food at the Sharjah-crossing between Jordan and Syria 2013. </p>
+									<p>The UN has decided to withdraw the food for more than 200 000 people if not more donations are coming in.</p>
+
+								
+
+									<div class="icons">
+
+										<a target="_blank" class="engage" href="http://www.payit4ward.se/
+										"><div></div>Engage
+										<span class="caption">Pay it forward</span>
+										</a>
+										<a target="_blank" href=" http://give.wfp.org
+										" class="donate"><div></div>Donate
+										<span class="caption">World food program</span>
+							
+										</a>
+									</div>
+								</div>
+							</div>
+							
+							
+						</div>
+					</div>
+				</div><!--item -->
+				<div class="swiper-slide" id="sunny" data-hash="sunny">
+					<div class="swiper-container swiper-container-v">
+			  			<div class="swiper-wrapper">
+
+							<div class="fullpage swiper-slide sunny">
+								<div class="statement">
+									<p>Sunny beach 2015</p>
+								</div>
+								<div class="swiper-button-next swiper-button"></div>
+        						<div class="swiper-button-prev swiper-button"></div>
+        						<div class="swiper-button-down"></div>
+							</div>
+
+							<div class="fullpage swiper-slide">
+								<div class="swiper-button-up"></div>
+								<div class="info">
+									<p class="intro">In 2014, 3,500 people lost their lives in an attempt to reach European soil, <br />219 000 made it across. 
+									 </p>
+									 <p>In 2015 more than 300 000 people have embarked on this dangerous journey with 2,500 casualties and counting. These boats are fragile and old, there are safer ways. Donate!</p>
+
+								
+
+									<div class="icons">
+
+										<a target="_blank" class="donate" href="http://gulabatarna.se/
+										"><div></div>Donate
+										<span class="caption">Gula båtarna</span>
+										</a>
+										<a target="_blank" href="https://sverigeforunhcr.se/batflyktingar 
+										" class="donate"><div></div>Engage
+										<span class="caption">UNHCR</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							
+							
+						</div>
+					</div>
+				</div><!--item -->
+				<div class="swiper-slide" id="teddy" data-hash="teddy">
+					<div class="swiper-container swiper-container-v">
+			  			<div class="swiper-wrapper">
+
+							<div class="fullpage swiper-slide teddy">
+								<div class="statement">
+									<p>Saga 3, enjoying a fikapaus in Soktorp</p>
+								</div>
+								<div class="swiper-button-next swiper-button"></div>
+        						<div class="swiper-button-prev swiper-button"></div>
+        						<div class="swiper-button-down"></div>
+							</div>
+
+							<div class="fullpage swiper-slide">
+								<div class="swiper-button-up"></div>
+								<div class="info">
+									<p class="intro">This is actually outside a refugee camp, in Qaa, Lebanon.  
+									 </p>
+									 <p>When the refugees arrive at new destinations, they’re often placed in big refugee camps and asylum accommodations. They need to be integrated to the society, take time to meet a refugee for a fika!</p>
+									
+									<div class="icons">
+
+										<a target="_blank" class="engage" href="http://kompisbyran.se
+										"><div></div>Engage
+										<span class="caption">Kompisbyrån</span>
+										</a>
+										<a target="_blank" href="http://www.manniskohjalp.se/projekt/move-it-0  
+										" class="engage"><div></div>Engage
+										<span class="caption">Människohjälp</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							
+							
+						</div>
+					</div>
+				</div><!--item -->
+				
 			</div><!-- wrapper horizontal -->	
 		</div><!-- swiper horizontal container -->
 		<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
