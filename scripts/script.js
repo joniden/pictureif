@@ -16,6 +16,7 @@ $(document).ready(function () {
  	var swiperV = new Swiper ('.swiper-container-v', {
   	// Optional parameters
   	direction: 'vertical',
+    scrollbar: '.swiper-scrollbar',
   	loop: false,
     nextButton: '.swiper-button-down',
     mousewheelControl: true,
