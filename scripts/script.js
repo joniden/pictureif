@@ -58,8 +58,17 @@ $(document).ready(function () {
 
 
   $('a[data-slide-index]').on('click', function (e) {
-    e.preventDefault();
-    swiperH.slideTo($(this).attr('data-slide-index'));
+    //e.preventDefault();
+
+    var v = $('.swiper-container-v')[swiperH.activeIndex].swiper;
+
+    v.slidePrev();
+
+    if(v.activeIndex == 0){
+      swiperH.update();
+      swiperH.slideTo($(this).attr('data-slide-index'));
+    }
+     
   });
 
   //Fix for menu
