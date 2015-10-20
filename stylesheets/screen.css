@@ -94,8 +94,25 @@ img {
   height: auto;
 }
 
+b{
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Univers';
+  src: url('../fonts/Univers-CondensedBold.eot');
+  src: url('../fonts/Univers-CondensedBold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Univers-CondensedBold.woff2') format('woff2'),
+       url('../fonts/Univers-CondensedBold.woff') format('woff'),
+       url('../fonts/Univers-CondensedBold.ttf') format('truetype'),
+       url('../fonts/Univers-CondensedBold.svg#Univers-CondensedBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 /* line 32, ../sass/screen.scss */
-div.statement {
+.statement {
   font-family: "Arial Black", sans-serif;
   font-size: 8vw;
   display: block;
@@ -106,7 +123,7 @@ div.statement {
   width: 100%;
 }
 /* line 43, ../sass/screen.scss */
-div.statement p {
+.statement p {
   position: absolute;
   z-index: 10;
   bottom: 10vh;
@@ -248,8 +265,9 @@ div.statement p {
   box-shadow: 0 0 0 transparent;
   color: white;
   border: 0px;
-  text-align: center;
+  text-align: left;
   min-width: 0px;
+
   height: auto;
 }
 /* line 177, ../sass/screen.scss */
@@ -259,7 +277,7 @@ div.statement p {
 /* line 180, ../sass/screen.scss */
 .dropdown-menu > li > a {
   color: white;
-  padding: 7px;
+  padding: 4px 12px;
 }
 /* line 183, ../sass/screen.scss */
 .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
@@ -290,21 +308,30 @@ div.statement p {
 /* line 200, ../sass/screen.scss */
 .erik p {
   bottom: 20vh;
+  font-size: 80%;
 }
+#johanna .info{
+  margin-top: 50px;
+}
+
+#johanna .info p{
+  margin-bottom: 40px;
+}
+
 /* line 197, ../sass/screen.scss */
 .johanna {
   background-image: url("../img/Kid-Draw-Web.jpg");
 }
 /* line 200, ../sass/screen.scss */
 .johanna p {
-  bottom: 20vh;
+  bottom: 30vh;
 }
 .festival {
   background-image: url("../img/Festival-Web.jpg");
 }
 /* line 200, ../sass/screen.scss */
 .festival p {
-  bottom: 20vh;
+  bottom: 45vh;
   width: 100%;
   text-align: center;
 }
@@ -313,7 +340,7 @@ div.statement p {
 }
 /* line 200, ../sass/screen.scss */
 .sunny p {
-  bottom: 20vh;
+  bottom: 45vh;
   width: 100%;
   text-align: center;
 }
@@ -323,13 +350,13 @@ div.statement p {
 }
 /* line 200, ../sass/screen.scss */
 .teddy p {
-  bottom: 20vh;
+  bottom: 40vh;
   width: 100%;
   text-align: center;
 }
 
 /* line 205, ../sass/screen.scss */
-#about, #contact {
+.page{
   position: fixed;
   top: 0px;
   height: 0px;
@@ -339,25 +366,31 @@ div.statement p {
   background: black;
   z-index: 11;
   color: white;
-}
-
-#about h2, #contact h2{
-  font-size: 40px;
-  font-family: Helvetica, Arial, sans-serif;
-  max-width: 700px;
-  width: 90%;
-  margin: 40px auto;
-  font-weight: bold;
+  display: inline-block;
   text-align: center;
 }
 
-#about p, #contact p{
-  font-family: Helvetica, Arial, sans-serif;
+.page h2{
+  font-size: 1.6rem;
+  font-family: Arial, sans-serif;
   max-width: 700px;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  color: #eee;
+}
+
+.page p{
+  font-family: Helvetica, Arial, sans-serif;
+  max-width: 500px;
   width: 90%;
   margin: 20px auto;
-  font-size: 20px;
+  font-size: 1rem;
   line-height: 1.3;
+  font-weight: lighter;
+  text-align: justify;
+  color: #eee;
 }
 
 #contact p,#contact h2{
@@ -374,10 +407,22 @@ div.statement p {
 }
 
 /* line 215, ../sass/screen.scss */
-#about.pulldown, #contact.pulldown {
+.page.pulldown {
   height: 100%;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.9);
 
+}
+
+.page .content{
+  max-width: 500px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+}
+
+.page .hyper{
+  font-family: "Univers",sans-serif;
 }
 
 /* line 224, ../sass/screen.scss */
@@ -390,12 +435,13 @@ div.statement p {
 }
 /* line 231, ../sass/screen.scss */
 .info p {
-  font-size: 20px;
+  font-size: 1.04rem;
   text-align: left;
   max-width: 700px;
   margin: auto;
   margin-bottom: 60px;
-  line-height: 1.5;
+  line-height: 1.3;
+  font-weight: lighter;
 }
 /* line 239, ../sass/screen.scss */
 .info p.intro {
@@ -406,6 +452,11 @@ div.statement p {
   width: 100%;
   line-height: 1;
 }
+
+.info a{
+  color: white;
+}
+
 /* line 249, ../sass/screen.scss */
 .info ul {
   font-size: 20px;
@@ -419,6 +470,9 @@ div.statement p {
 .icons {
   text-align: center;
   width: 100%;
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
 }
 /* line 264, ../sass/screen.scss */
 .icons .engage div {
@@ -431,13 +485,13 @@ div.statement p {
 /* line 272, ../sass/screen.scss */
 .icons .engage, .icons .donate {
   display: inline-block;
-  width: 100px;
-  height: 120px;
+  width: 60px;
+  height: 75px;
   margin: 0 20px;
   color: #f1f1f1;
   text-decoration: none;
   position: relative;
-  font-weight: bold;
+  font-weight: lighter;
 }
   
 .icons .caption{
@@ -446,8 +500,8 @@ div.statement p {
   top: -40px;
   color: white;
   padding: 10px;
-  left: -70px;
-  width: 250px;
+  left: -84px;
+  width: 230px;
   text-align: center;
 }
 
