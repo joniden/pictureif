@@ -144,7 +144,7 @@ b{
 /* line 61, ../sass/screen.scss */
 .swiper-container {
   height: 100%;
-  width: 100vw;
+  width: 100%;
 }
 
 /* line 68, ../sass/screen.scss */
@@ -156,6 +156,7 @@ b{
 /* line 74, ../sass/screen.scss */
 .swiper-button {
   height: 100%;
+  margin-top: 0;
   top: 0px;
   width: 50px;
   background-color: transparent;
@@ -225,7 +226,8 @@ b{
   font-family: "Helvetica Lighter","Arial",sans-serif;
   text-align: right;
   width: 320px;
-  left: 60%;
+  left: auto;
+  right: 0;
 }
 /* line 129, ../sass/screen.scss */
 .navbar li {
@@ -311,13 +313,6 @@ b{
 .erik p {
   bottom: 20vh;
   font-size: 80%;
-}
-#johanna .info{
-  margin-top: 50px;
-}
-
-#johanna .info p{
-  margin-bottom: 40px;
 }
 
 /* line 197, ../sass/screen.scss */
@@ -434,6 +429,9 @@ b{
   font-family: "Helvetica",Arial,sans-serif;
   text-align: center;
   width: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 /* line 231, ../sass/screen.scss */
 .info p {
@@ -473,8 +471,9 @@ b{
   text-align: center;
   width: 100%;
   position: absolute;
-  bottom: 20px;
+  bottom: 30px;
   left: 0px;
+  font-family: Helvetica, Arial, sans-serif;
 }
 /* line 264, ../sass/screen.scss */
 .icons .engage div {

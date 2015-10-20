@@ -1,48 +1,61 @@
 $(document).ready(function () {
   //initialize swiper when document ready  
-  var swiperH = new Swiper ('.swiper-container-h', {
-    direction: 'horizontal',
-    loop: false,
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
-    //keyboardControl: true,
-    //Possible to link to an image
-    hashnav: true,
-    //autoplay: 2500,
-    autoplayDisableOnInteraction: true,
-    
+    var swiperH = new Swiper ('.swiper-container-h', {
+      direction: 'horizontal',
+      loop: false,
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      slidesPerView: 1,
+      //keyboardControl: true,
+      //Possible to link to an image
+      hashnav: true,
+      //autoplay: 2500,
+      autoplayDisableOnInteraction: true
 
-  }); 
-
- 	var swiperV = new Swiper ('.swiper-container-v', {
-  	// Optional parameters
-  	direction: 'vertical',
-    scrollbar: '.swiper-scrollbar',
-  	loop: false,
-    nextButton: '.swiper-button-down',
-    prevButton: '.swiper-button-up',
-    //hashnav: true,
-    mousewheelControl: true,
-    mousewheelReleaseOnEdges: true,
-    onSlideChangeEnd: function(i){
-
-      i.update();
-
-      if(i.isBeginning == false){       
-        swiperH.lockSwipes();
-      }else{
-        swiperH.unlockSwipes();
-        var l = swiperH.slides.length;
-
-        //Push all of the slides up
-        for(j=0;j<l;j++){
-          var v = $('.swiper-container-v')[j].swiper;
-          v.slidePrev(0);
-        }
-      }
       
+    }); 
+
+   	var swiperV = new Swiper ('.swiper-container-v', {
+    	// Optional parameters
+    	direction: 'vertical',
+      scrollbar: '.swiper-scrollbar',
+    	loop: false,
+      nextButton: '.swiper-button-down',
+      prevButton: '.swiper-button-up',
+      //hashnav: true,
+      mousewheelControl: true,
+      mousewheelReleaseOnEdges: true,
+      onSlideChangeEnd: function(i){
+
+        i.update();
+
+        if(i.isBeginning == false){       
+          swiperH.lockSwipes();
+        }else{
+          swiperH.unlockSwipes();
+          var l = swiperH.slides.length;
+
+          //Push all of the slides up
+          for(j=0;j<l;j++){
+            var v = $('.swiper-container-v')[j].swiper;
+            v.slidePrev(0);
+          }
+        }
+        
+      }
+    });
+
+  function onResize(){
+    swiperH.update();
+  }
+
+  window.onresize = function(){
+    if(typeof doit !== 'undefined'){
+      clearTimeout(doit);
     }
-  })
+    doit = setTimeout(onResize, 100);
+  };
+
 
   $('a[data-slide-index]').on('click', function (e) {
     e.preventDefault();
