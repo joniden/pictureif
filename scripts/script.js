@@ -10,11 +10,9 @@ $(document).ready(function () {
     hashnav: true,
     //autoplay: 2500,
     autoplayDisableOnInteraction: true,
-    onSlideChangeEnd: function(i,o){
+    
 
-    }
-
-  });   
+  }); 
 
  	var swiperV = new Swiper ('.swiper-container-v', {
   	// Optional parameters
@@ -34,6 +32,13 @@ $(document).ready(function () {
         swiperH.lockSwipes();
       }else{
         swiperH.unlockSwipes();
+        var l = swiperH.slides.length;
+
+        //Push all of the slides up
+        for(j=0;j<l;j++){
+          var v = $('.swiper-container-v')[j].swiper;
+          v.slidePrev(0);
+        }
       }
       
     }

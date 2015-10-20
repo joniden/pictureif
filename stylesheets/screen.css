@@ -224,6 +224,8 @@ b{
   border-bottom: 0;
   font-family: "Helvetica Lighter","Arial",sans-serif;
   text-align: right;
+  width: 320px;
+  left: 60%;
 }
 /* line 129, ../sass/screen.scss */
 .navbar li {
@@ -533,6 +535,11 @@ b{
   }
 }
 @media (max-width: 767px) {
+  .navbar{
+    width: 100%;
+    left: 0;
+  }
+
   /* line 21, ../sass/_mq.scss */
   .navbar-default .navbar-collapse {
     float: left;
