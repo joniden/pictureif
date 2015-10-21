@@ -62,7 +62,9 @@ $(document).ready(function () {
 
     var v = $('.swiper-container-v')[swiperH.activeIndex].swiper;
 
-    v.slidePrev();
+    if(v.activeIndex !== 0){
+      v.slideTo(0);
+    }
 
     if(v.activeIndex == 0){
       swiperH.update();
