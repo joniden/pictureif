@@ -5,7 +5,7 @@ $(document).ready(function () {
       loop: false,
       nextButton: '.swiper-button-next',
       prevButton: '.swiper-button-prev',
-      slidesPerView: 1,
+      slidesPerView: 'auto',
       //keyboardControl: true,
       //Possible to link to an image
       hashnav: true,
@@ -18,10 +18,10 @@ $(document).ready(function () {
    	var swiperV = new Swiper ('.swiper-container-v', {
     	// Optional parameters
     	direction: 'vertical',
-      scrollbar: '.swiper-scrollbar',
     	loop: false,
       nextButton: '.swiper-button-down',
       prevButton: '.swiper-button-up',
+      slidesPerView: 'auto',
       //hashnav: true,
       mousewheelControl: true,
       mousewheelReleaseOnEdges: true,
@@ -74,7 +74,7 @@ $(document).ready(function () {
   });
 
   //Fix for menu
-  $('.fullpage,.swiper-container').height(window.innerHeight);
+  //$('.fullpage,.swiper-container').height(window.innerHeight);
 
 
   /**

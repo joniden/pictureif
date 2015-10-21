@@ -137,7 +137,7 @@ b{
 }
 /* line 55, ../sass/screen.scss */
 .content-wrap.show-menu {
-  margin-top: 100px;
+  margin-top: 160px;
 }
 
 /** Swiper **/
@@ -212,6 +212,10 @@ b{
   background-size: cover;
   background-position: center;
   float: left;
+}
+
+.fullpage:nth-child(2){
+  overflow-y: scroll;
 }
 
 /* line 119, ../sass/screen.scss */
@@ -294,6 +298,10 @@ b{
   background-image: url("../img/Ahmed-Aleppo-Web.jpg");
 }
 
+.soldier p{
+  bottom: 30vh;
+}
+
 /* line 197, ../sass/screen.scss */
 .gullmarstorp {
   background-image: url("../img/Gullmarstorp-Web.jpg");
@@ -311,7 +319,7 @@ b{
 }
 /* line 200, ../sass/screen.scss */
 .erik p {
-  bottom: 20vh;
+  bottom: 30vh;
   font-size: 80%;
 }
 
@@ -537,11 +545,13 @@ b{
   .navbar{
     width: 100%;
     left: 0;
+    height: 180px;
   }
 
   /* line 21, ../sass/_mq.scss */
   .navbar-default .navbar-collapse {
     float: left;
+    height: 100%;
   }
   /* line 25, ../sass/_mq.scss */
   .navbar-default .navbar-nav {
@@ -565,7 +575,7 @@ b{
     position: absolute;
     width: 100%;
     margin-top: -20px;
-    top: 80%;
+    top: 35%;
   }
   /* line 49, ../sass/_mq.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li {
@@ -584,20 +594,29 @@ b{
   /* line 66, ../sass/_mq.scss */
   .info {
     padding: 10px;
+    position: static;
+    transform: translateY(0%);
+
   }
+
+  .fullpage:nth-child(2){
+    overflow-y: scroll;
+  }
+
   /* line 68, ../sass/_mq.scss */
   .info p {
     padding: 0 30px;
+    font-size: 90%;
   }
   /* line 70, ../sass/_mq.scss */
   .info p.intro {
-    font-size: 24px;
+    font-size: 20px;
     margin-top: 60px;
+    margin-bottom: 20px;
   }
 
   /* line 77, ../sass/_mq.scss */
   .icons {
-    position: absolute;
     bottom: 15px;
   }
   /* line 81, ../sass/_mq.scss */
