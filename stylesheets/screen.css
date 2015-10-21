@@ -294,6 +294,10 @@ b{
   background-image: url("../img/Ahmed-Aleppo-Web.jpg");
 }
 
+.soldier p{
+  bottom: 30vh;
+}
+
 /* line 197, ../sass/screen.scss */
 .gullmarstorp {
   background-image: url("../img/Gullmarstorp-Web.jpg");
@@ -311,7 +315,7 @@ b{
 }
 /* line 200, ../sass/screen.scss */
 .erik p {
-  bottom: 20vh;
+  bottom: 30vh;
   font-size: 80%;
 }
 
