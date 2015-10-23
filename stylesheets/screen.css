@@ -590,6 +590,8 @@ b{
     padding-right: 10px;
   }
 }
+
+
 @media (max-width: 700px) {
   /* line 66, ../sass/_mq.scss */
   .info {
@@ -631,3 +633,11 @@ b{
     width: 44px;
   }
 }
+
+@media only screen and (max-height: 600px) and (max-width: 800px){
+  .info p.intro{
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+}
+
